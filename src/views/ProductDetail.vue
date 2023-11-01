@@ -73,4 +73,20 @@ button:hover{
 .ll{
     width: 150px;
 }
+@media(max-width:800px) {
+    .product{
+        width: 100%;
+        height: 500px;
+        
+        flex-direction: column;
+        text-align: center;
+    }
+    .product-image{
+        width: 100%;
+        margin: 0px;
+    }
+    .product-image img{
+        width: 100%;
+    }
+}
 </style>

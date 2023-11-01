@@ -56,9 +56,10 @@ onMounted( () => {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 .product{
-    flex-basis: 30%;
+    width: 30%;
     margin: 20px 0px 20px 10px;
     padding: 16px;
     box-shadow: 0px 0px 14px 1px #e6e6e6;
@@ -66,7 +67,6 @@ onMounted( () => {
     height: 400px;
     text-align: center;
     border-radius: 50px;
-    
     transition: 0.5s;
     display: flex;
     flex-direction: column;
@@ -76,6 +76,7 @@ onMounted( () => {
 .pla{
     height: 60%;
     width: 100%;
+ 
   
 }
 .pla img{
@@ -85,10 +86,28 @@ onMounted( () => {
 .lap{
     width: 100%;
     height: 40%;
+   
     
 }
 .product:hover{
     scale: 0.98;
     box-shadow: 0px 0px 10px 1px #141010;;
 }
+@media(max-width:800px) {
+    .product{
+        width: 90%;
+        margin: 20px 0px 20px 0px;
+    }
+    
+}
+@media (min-width: 801px) and (max-width:1300px){
+    .product{
+        width: 45%;
+        margin: 20px 0px 20px 0px;
+
+    }
+    
+    
+}
+
 </style>

@@ -46,6 +46,7 @@ const store = productsStore()
   cursor: pointer;
   width: 20%;
   display: flex;
+  
 }
 .cart-items img{
   width: 40px;
@@ -53,6 +54,24 @@ const store = productsStore()
 }
 header{
   display: flex;
+  margin-bottom: 20px;
 }
+@media(max-width:800px) {
+      .cart-items{
+        width:40%;
+        font-size: 15px;
+      }
+      .welcome{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .welcome img{
+        width: 80%;
+        height: inherit;
+        
+      }
+    }
 
 </style>

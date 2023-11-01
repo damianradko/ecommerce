@@ -4,7 +4,7 @@
     v-if="!store.cart.length"
     style="text-align: center;"
     >
-        <h1>Empty Cart ...</h1>
+        <h1>Koszyk jest pusty...</h1>
     </div>
 
     <div
@@ -81,5 +81,10 @@ button{
 button:hover{
  outline: 10px solid white;
  border: 1px solid white;
+}
+@media(max-width:800px){
+    .item-details{
+        font-size: 15px;
+    }
 }
 </style>
